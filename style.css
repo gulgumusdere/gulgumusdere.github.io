@@ -1,0 +1,71 @@
+/* Colors */
+:root {
+  --teal: #1F4E5A;   /* name, links */
+  --ink: #1C1C1C;    /* main text */
+  --paper: #FAFAF7;  /* background */
+}
+
+/* Page */
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Content column */
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+/* Name at the top */
+.name {
+  margin: 0 0 2.5rem;
+  color: var(--teal);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* The claim */
+h1 {
+  margin: 0 0 1.5rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.25;
+}
+
+/* Short introduction */
+.intro {
+  margin: 0 0 2.5rem;
+}
+
+/* Link list */
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+}
+
+.links li {
+  border-bottom: 1px solid #ddd;
+}
+
+.links a {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links a:hover,
+.links a:focus {
+  text-decoration: underline;
+}
